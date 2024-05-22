@@ -1,4 +1,6 @@
-const productosData = 'https://4lurageek-database.vercel.app/products.json';
+//const productosData = 'https://4lurageek-database.vercel.app/products.json';
+
+const productosData = 'https://4lurageek-database.vercel.app/api/products/';
 
 // Función para mostrar los productos en la página
 function mostrarProductos() {

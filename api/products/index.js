@@ -1,4 +1,4 @@
-export default function handler(req, res) {
+/* export default function handler(req, res) {
   if (req.method === 'GET') {
     // Lógica para obtener los productos
     const data = require('./products.json');
@@ -6,7 +6,7 @@ export default function handler(req, res) {
   } else {
     res.status(405).end(); // Método no permitido
   }
-}
+} */
 
 /* export default function handler(req, res) {
   // Permitir solicitudes desde el origen de tu aplicación web
@@ -108,7 +108,7 @@ export default function handler(req, res) {
 } */
 
 
-/* export default function handler(req, res) {
+export default function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*'); // Permitir acceso desde cualquier origen (cambia '*' por el origen específico de tu aplicación web si es necesario)
   res.setHeader('Access-Control-Allow-Methods', 'GET, PUT'); // Permitir métodos GET y PUT
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type'); // Permitir el encabezado Content-Type
@@ -127,11 +127,11 @@ export default function handler(req, res) {
   } else {
     res.status(405).end(); // Método no permitido
   }
-} */
+} 
 
 
-
-/* export default function handler(req, res) {
+/* 
+ export default function handler(req, res) {
     if (req.method === 'GET') {
       // Lógica para obtener los productos
       const data = require('./products.json');
@@ -145,5 +145,5 @@ export default function handler(req, res) {
     } else {
       res.status(405).end(); // Método no permitido
     }
-  } */
+  }  */
   
