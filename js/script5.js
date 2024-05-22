@@ -46,6 +46,7 @@ function agregarProducto(event) {
 
   fetch(productosData, {
     method: 'PUT',
+    mode: 'no-cors',  //------------------------------------------------
     headers: {
       'Content-Type': 'application/json'
     },
@@ -63,6 +64,7 @@ function eliminarProducto(event) {
 
   fetch(productosData, {
     method: 'PUT',
+    mode: 'no-cors',  //------------------------------------------------
     headers: {
       'Content-Type': 'application/json'
     },
