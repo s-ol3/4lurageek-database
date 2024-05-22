@@ -1,4 +1,25 @@
 export default function handler(req, res) {
+  // Permitir solicitudes desde el origen de tu aplicación web
+  res.setHeader('Access-Control-Allow-Origin', 'https://4lurageek-database.vercel.app/');
+  // Permitir métodos GET, PUT y OPTIONS
+  res.setHeader('Access-Control-Allow-Methods', 'GET, PUT, OPTIONS');
+  // Permitir el encabezado Content-Type
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+
+  if (req.method === 'OPTIONS') {
+    // Responder con OK para las solicitudes OPTIONS
+    res.status(200).end();
+  } else if (req.method === 'PUT') {
+    // Lógica para procesar la solicitud PUT
+    res.status(200).json({ message: 'Solicitud PUT procesada correctamente' });
+  } else {
+    // Manejar otros métodos de solicitud
+    res.status(405).end(); // Método no permitido
+  }
+}
+
+
+/* export default function handler(req, res) {
   if (req.method === 'OPTIONS') {
     // Permitir solicitudes CORS OPTIONS
     res.setHeader('Access-Control-Allow-Origin', '*');
@@ -18,7 +39,7 @@ export default function handler(req, res) {
   } else {
     res.status(405).end(); // Método no permitido
   }
-}
+} */
 
 
 /* export default function handler(req, res) {
