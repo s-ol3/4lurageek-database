@@ -1,4 +1,6 @@
-const productosData = 'https://4lurageek-database.vercel.app/api/products/';
+//const productosData = 'https://4lurageek-database.vercel.app/api/products/';
+
+const productosData ='https://4lurageek-database-git-main-marthas-projects-1651249b.vercel.app/api/products/'
 let productos = []; // Variable global para almacenar los productos
 
 function mostrarProductos() {
