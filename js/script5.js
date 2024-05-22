@@ -46,7 +46,7 @@ function agregarProducto(event) {
 
   fetch(productosData, {
     method: 'PUT',
-    mode: 'no-cors',  //------------------------------------------------
+   
     headers: {
       'Content-Type': 'application/json'
     },
@@ -63,7 +63,7 @@ function eliminarProducto(event) {
   const newData = productos.filter(producto => producto.id != id); // Usar la variable global
 
   fetch(productosData, {
-    method: 'PUT',
+    method: 'DELETE',
 
     headers: {
       'Content-Type': 'application/json'
