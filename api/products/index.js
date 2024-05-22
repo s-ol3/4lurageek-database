@@ -1,4 +1,14 @@
 export default function handler(req, res) {
+  if (req.method === 'GET') {
+    // Lógica para obtener los productos
+    const data = require('./products.json');
+    res.status(200).json(data);
+  } else {
+    res.status(405).end(); // Método no permitido
+  }
+}
+
+/* export default function handler(req, res) {
   // Permitir solicitudes desde el origen de tu aplicación web
   res.setHeader('Access-Control-Allow-Origin', 'https://4lurageek-database.vercel.app/');
   // Permitir métodos GET, PUT y OPTIONS
@@ -16,7 +26,7 @@ export default function handler(req, res) {
     // Manejar otros métodos de solicitud
     res.status(405).end(); // Método no permitido
   }
-}
+} */
 
 
 /* export default function handler(req, res) {
