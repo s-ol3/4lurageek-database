@@ -1,4 +1,4 @@
-export default function handler(req, res) {
+/* export default function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', 'https://4lurageek-database-git-main-marthas-projects-1651249b.vercel.app');
   res.setHeader('Access-Control-Allow-Methods', 'PUT, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
@@ -11,7 +11,7 @@ export default function handler(req, res) {
   } else {
     res.status(405).end(); // Método no permitido para otros tipos de solicitud
   }
-}
+} */
 
 
 /* export default function handler(req, res) {
@@ -97,7 +97,7 @@ export default function handler(req, res) {
 } */
 
 
-/* export default function handler(req, res) {
+export default function handler(req, res) {
   // Permitir solicitudes desde cualquier origen (cambia '*' por el origen específico de tu aplicación web si es necesario)
   res.setHeader('Access-Control-Allow-Origin', 'https://4lurageek-database.vercel.app/');
   // Permitir métodos GET, PUT y OPTIONS
@@ -121,7 +121,7 @@ export default function handler(req, res) {
   } else {
     res.status(405).end(); // Método no permitido
   }
-} */
+} 
 
 
 
