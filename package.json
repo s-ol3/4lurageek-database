@@ -4,7 +4,7 @@
   "description": "Alura geek - Alura latam program",
   "main": "index.html",
   "scripts": {
-    "start": "json-server --watch ./database/products.json" 
+    "start": "https://4lurageek-database.vercel.app/api/products/" 
   },
   "repository": {
     "type": "git",
