@@ -1,3 +1,19 @@
+export default function handler(req, res) {
+  res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Methods', 'PUT, OPTIONS');
+  res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
+
+  if (req.method === 'OPTIONS') {
+    res.status(200).end(); // Responder OK para solicitudes OPTIONS
+  } else if (req.method === 'PUT') {
+    // Lógica para procesar la solicitud PUT
+    res.status(200).json({ message: 'Solicitud PUT procesada correctamente' });
+  } else {
+    res.status(405).end(); // Método no permitido para otros tipos de solicitud
+  }
+}
+
+
 /* export default function handler(req, res) {
   if (req.method === 'GET') {
     // Lógica para obtener los productos
@@ -108,7 +124,29 @@
 } */
 
 
-export default function handler(req, res) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* export default function handler(req, res) {
   res.setHeader('Access-Control-Allow-Origin', '*'); // Permitir acceso desde cualquier origen (cambia '*' por el origen específico de tu aplicación web si es necesario)
   res.setHeader('Access-Control-Allow-Methods', 'GET, PUT'); // Permitir métodos GET y PUT
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type'); // Permitir el encabezado Content-Type
@@ -127,7 +165,37 @@ export default function handler(req, res) {
   } else {
     res.status(405).end(); // Método no permitido
   }
-} 
+}  */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /* 
