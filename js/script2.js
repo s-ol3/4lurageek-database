@@ -1,6 +1,6 @@
 //const productosData = '/api/products'; // Cambiar la URL a la función serverless en Vercel
 
-const productosData = 'https://4lurageek-database.vercel.app/api/products';
+const productosData = 'https://4lurageek-database.vercel.app/api/products/';
 
 function mostrarProductos() {
   fetch(productosData)
