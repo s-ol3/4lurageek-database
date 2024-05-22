@@ -1,0 +1,20 @@
+{
+  "name": "alurageek",
+  "version": "1.0.0",
+  "description": "Alura geek - Alura latam program",
+  "main": "index.html",
+  "scripts": {
+    "start": "json-server --watch ./database/products.json" 
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "CRUD",
+    "4lura",
+    "latam"
+  ],
+  "author": "sf",
+  "license": "sf"
+}
