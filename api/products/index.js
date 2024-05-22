@@ -1,5 +1,5 @@
 export default function handler(req, res) {
-  res.setHeader('Access-Control-Allow-Origin', 'https://4lurageek-database.vercel.app/');
+  res.setHeader('Access-Control-Allow-Origin', 'https://4lurageek-database-git-main-marthas-projects-1651249b.vercel.app');
   res.setHeader('Access-Control-Allow-Methods', 'PUT, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 
