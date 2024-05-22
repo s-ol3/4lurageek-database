@@ -1,6 +1,8 @@
 export default function handler(req, res) {
   // Permitir solicitudes desde cualquier origen
-  res.setHeader('Access-Control-Allow-Origin', '*');
+  //res.setHeader('Access-Control-Allow-Origin', '*');
+  res.setHeader('Access-Control-Allow-Origin', 'https://4lurageek-database-1quq0a3bz-marthas-projects-1651249b.vercel.app');
+
   // Permitir métodos GET, PUT y OPTIONS
   res.setHeader('Access-Control-Allow-Methods', 'GET, PUT, OPTIONS');
   // Permitir el encabezado Content-Type
